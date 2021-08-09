@@ -71,7 +71,7 @@ export default function Shop(){
         </div>
         <div className='row'>
         <div className='total price'>Final : </div>
-        <div className='price'>{total.ttl-total.disc}</div>
+        <div className='price'>{Number(total.ttl-total.disc).toFixed(2)}</div>
         </div>
         {(products.length > 0)?
           products.map((el,i)=>{
